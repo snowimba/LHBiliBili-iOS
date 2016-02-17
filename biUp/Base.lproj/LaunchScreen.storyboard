@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bilibili_splash_iphone_bg" translatesAutoresizingMaskIntoConstraints="NO" id="xcZ-Vd-ZIj">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bilibili_splash_default" translatesAutoresizingMaskIntoConstraints="NO" id="PxQ-xX-iNU">
+                                <rect key="frame" x="0.0" y="-90" width="600" height="690"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="xcZ-Vd-ZIj" secondAttribute="trailing" id="0yk-6n-cWI"/>
+                            <constraint firstAttribute="trailing" secondItem="PxQ-xX-iNU" secondAttribute="trailing" id="2dq-0G-nin"/>
+                            <constraint firstItem="PxQ-xX-iNU" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="5cM-KD-M3Z"/>
+                            <constraint firstItem="xcZ-Vd-ZIj" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="Ftt-ue-t2l"/>
+                            <constraint firstItem="xcZ-Vd-ZIj" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" id="JnJ-6B-AS7"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="PxQ-xX-iNU" secondAttribute="bottom" id="Lro-dk-PVm"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="xcZ-Vd-ZIj" secondAttribute="bottom" id="aBl-sR-ZRk"/>
+                            <constraint firstItem="xcZ-Vd-ZIj" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="wld-xS-QTI"/>
+                            <constraint firstItem="PxQ-xX-iNU" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" constant="-90" id="xKP-Kw-SOm"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="JnJ-6B-AS7"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bilibili_splash_default" width="320" height="420"/>
+        <image name="bilibili_splash_iphone_bg" width="320" height="568"/>
+    </resources>
+</document>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="dgcell" id="oz8-eR-h4f" customClass="LHShopCell">
+            <rect key="frame" x="0.0" y="0.0" width="158" height="265"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="158" height="265"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sn4-yo-kz9">
+                        <rect key="frame" x="0.0" y="0.0" width="158" height="233"/>
+                        <animations/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YQa-UX-UZi">
+                        <rect key="frame" x="8" y="241" width="142" height="16"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <animations/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <animations/>
+            <constraints>
+                <constraint firstItem="YQa-UX-UZi" firstAttribute="top" secondItem="sn4-yo-kz9" secondAttribute="bottom" constant="8" id="8Wm-PH-A3R"/>
+                <constraint firstAttribute="trailing" secondItem="sn4-yo-kz9" secondAttribute="trailing" id="ASH-Dv-dNO"/>
+                <constraint firstAttribute="trailing" secondItem="YQa-UX-UZi" secondAttribute="trailing" constant="8" id="PD4-uQ-ebH"/>
+                <constraint firstAttribute="bottom" secondItem="YQa-UX-UZi" secondAttribute="bottom" constant="8" id="bWh-x6-1N9"/>
+                <constraint firstItem="YQa-UX-UZi" firstAttribute="leading" secondItem="oz8-eR-h4f" secondAttribute="leading" constant="8" id="cQc-uY-Uct"/>
+                <constraint firstItem="sn4-yo-kz9" firstAttribute="top" secondItem="oz8-eR-h4f" secondAttribute="top" id="r1r-Iz-Ntn"/>
+                <constraint firstItem="sn4-yo-kz9" firstAttribute="leading" secondItem="oz8-eR-h4f" secondAttribute="leading" id="x2g-en-piY"/>
+            </constraints>
+            <size key="customSize" width="158" height="265"/>
+            <connections>
+                <outlet property="iconView" destination="sn4-yo-kz9" id="FfA-BE-G1e"/>
+                <outlet property="nameView" destination="YQa-UX-UZi" id="oWY-vm-tXw"/>
+            </connections>
+            <point key="canvasLocation" x="200" y="301.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

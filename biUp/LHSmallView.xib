@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="3cP-1w-Mo0" customClass="LHSmallView">
+            <rect key="frame" x="0.0" y="0.0" width="316" height="56"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cZd-Uh-3Lc">
+                    <rect key="frame" x="8" y="8" width="40" height="40"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="4SI-hD-zou"/>
+                        <constraint firstAttribute="width" constant="40" id="7KH-pc-5cx"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ULm-aQ-a3v">
+                    <rect key="frame" x="56" y="8" width="244" height="40"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" red="0.86274509803921573" green="0.86274509803921573" blue="0.86274509803921573" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="ULm-aQ-a3v" secondAttribute="trailing" constant="16" id="ARU-Dz-Sed"/>
+                <constraint firstItem="ULm-aQ-a3v" firstAttribute="centerY" secondItem="cZd-Uh-3Lc" secondAttribute="centerY" id="PzU-1C-47z"/>
+                <constraint firstAttribute="bottom" secondItem="ULm-aQ-a3v" secondAttribute="bottom" constant="8" id="R1w-Tl-iMr"/>
+                <constraint firstItem="cZd-Uh-3Lc" firstAttribute="top" secondItem="3cP-1w-Mo0" secondAttribute="top" constant="8" id="SnB-wC-5ky"/>
+                <constraint firstItem="ULm-aQ-a3v" firstAttribute="top" secondItem="cZd-Uh-3Lc" secondAttribute="top" id="UJB-7N-BfP"/>
+                <constraint firstItem="cZd-Uh-3Lc" firstAttribute="leading" secondItem="3cP-1w-Mo0" secondAttribute="leading" constant="8" id="Wo8-qX-Qx7"/>
+                <constraint firstItem="ULm-aQ-a3v" firstAttribute="leading" secondItem="cZd-Uh-3Lc" secondAttribute="trailing" constant="8" id="fUi-xO-LCU"/>
+                <constraint firstItem="ULm-aQ-a3v" firstAttribute="centerY" secondItem="cZd-Uh-3Lc" secondAttribute="centerY" id="v24-sy-3Fv"/>
+                <constraint firstItem="ULm-aQ-a3v" firstAttribute="top" secondItem="3cP-1w-Mo0" secondAttribute="top" constant="8" id="vYu-ts-YTx"/>
+                <constraint firstAttribute="bottom" secondItem="cZd-Uh-3Lc" secondAttribute="bottom" constant="8" id="w1r-ji-eiJ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="w1r-ji-eiJ"/>
+                    <exclude reference="PzU-1C-47z"/>
+                    <exclude reference="UJB-7N-BfP"/>
+                    <exclude reference="v24-sy-3Fv"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="icon" destination="cZd-Uh-3Lc" id="Dcd-Ye-J67"/>
+                <outlet property="name" destination="ULm-aQ-a3v" id="Xwq-yR-e1c"/>
+            </connections>
+            <point key="canvasLocation" x="651" y="-268"/>
+        </view>
+    </objects>
+</document>
