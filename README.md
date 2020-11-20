@@ -1,7 +1,5 @@
 # LHBiliBili
-高高高仿BiliBili的iOS客户端
-
-我感觉吧~安卓的客户端真的比iOS的漂亮许多啊~！！！！
+仿BiliBili的iOS客户端
 
 自己防的BiliBili，功能还在完善中···
 
